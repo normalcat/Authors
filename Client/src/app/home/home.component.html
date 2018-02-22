@@ -1,0 +1,10 @@
+<p>
+  home works!
+</p>
+
+<div *ngFor="let author of authors">
+    <h3>{{author.name}}</h3>
+<!--    <button [routerLink] = "['../quotes']" (click) = "sendData(author._id)">View quotes</button>-->
+    <button [routerLink] = "['../edit']" (click) = "sendData(author._id)">Edit</button>
+    <button (click) = "deleteOne(author._id)">Delete</button>
+</div>

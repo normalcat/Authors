@@ -1,0 +1,6 @@
+<p>
+  add works!
+</p>
+<h3>Add an Author</h3>
+    <input type="text" name="newAuthor.name" [(ngModel)]="newAuthor.name">
+    <input type="button" value="Add" (click) = "submitAuthor()" [routerLink] = "['../home']">

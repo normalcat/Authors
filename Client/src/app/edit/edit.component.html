@@ -1,0 +1,11 @@
+<p>
+  edit works!
+</p>
+
+<h3>Edit This Author</h3>
+    <!-- use the json pipe to see how newTask changes in real time -->
+    <p> {{ newTask | json }} </p>
+<!--    <input type="text" name = "oneAuthor.name" [(ngModel)] = "oneAuthor.name">-->
+	<input type="text" name = "oneAuthor.name" [(ngModel)] = "oneAuthor.name">
+    <input type="button" value = "Update" (click) = "updateAuthor()" [routerLink] = "['../home']">
+    <button [routerLink] = "['../home']">Cancel</button>
